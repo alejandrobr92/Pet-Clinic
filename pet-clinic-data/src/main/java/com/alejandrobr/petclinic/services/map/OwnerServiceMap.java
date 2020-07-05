@@ -1,16 +1,22 @@
 package com.alejandrobr.petclinic.services.map;
 
 import com.alejandrobr.petclinic.model.Owner;
-import com.alejandrobr.petclinic.services.CrudService;
+import com.alejandrobr.petclinic.services.OwnerService;
 
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements CrudService<Owner,Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements OwnerService {
 
     @Override
     public Set<Owner> findAll() {
         return super.findAll();
     }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
+    }
+
     @Override
     public Owner findById(Long id) {
         return super.findById(id);
