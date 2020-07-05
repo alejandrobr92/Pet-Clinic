@@ -1,5 +1,7 @@
 package com.alejandrobr.petclinic.services.map;
 
+import org.springframework.stereotype.Service;
+
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
